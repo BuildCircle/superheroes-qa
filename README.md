@@ -21,7 +21,7 @@ Please install these before the interview. Windows, macOS and Linux all work.
 |---|---|---|
 | [Node.js](https://nodejs.org) | 24 (see `.nvmrc`) | Includes `npm`. Check with `node -v`. |
 | [Git](https://git-scm.com) | Any recent version | To clone this repository. |
-| [Yarn](https://classic.yarnpkg.com) | 1.x (classic) | Optional. Install with `npm install -g yarn`. You can use `npm` instead. |
+| [Yarn](https://classic.yarnpkg.com) | 1.x (classic) | Optional. Install with `npm install -g yarn`. You can use `npm` instead, so you don't need both. |
 | A code editor | Any | For example [VS Code](https://code.visualstudio.com). |
 
 You also need:
@@ -37,18 +37,21 @@ The project uses [Vite](https://vite.dev) and [Playwright](https://playwright.de
 ```
 git clone https://github.com/BuildCircle/superheroes-qa
 cd superheroes-qa
-yarn install
-npx playwright install chromium
-yarn test         # run the Playwright tests in e2e/
-yarn test:ui      # optional: Playwright UI mode
-yarn start        # optional: run the app at http://localhost:5173
 ```
 
-If you prefer npm, use `npm install`, `npm test`, `npm run test:ui` and `npm start` instead.
+You can use either **yarn** or **npm**, whichever you prefer. Just stick to one of them.
+
+| Step | yarn | npm |
+|---|---|---|
+| Install dependencies | `yarn install` | `npm install` |
+| Install the Playwright browser | `npx playwright install chromium` | `npx playwright install chromium` |
+| Run the Playwright tests in `e2e/` | `yarn test` | `npm test` |
+| Playwright UI mode (optional) | `yarn test:ui` | `npm run test:ui` |
+| Run the app at http://localhost:5173 (optional) | `yarn start` | `npm start` |
 
 ## Tasks
 
-1. `yarn test` doesn't pass cleanly. Find out why, and fix it.
+1. The tests (`yarn test` or `npm test`) don't pass cleanly. Find out why, and fix it.
 2. Add some new tests.
 3. If you find a bug in the app, write a bug report for it.
 
