@@ -51,8 +51,9 @@ You can use either **yarn** or **npm**, whichever you prefer. Just stick to one 
 
 ## Tasks
 
-1. The tests (`yarn test` or `npm test`) don't pass cleanly. Find out why, and fix it.
-2. Add some new tests.
-3. If you find a bug in the app, write a bug report for it.
+1. Review the existing tests and share your feedback on how they are written. Tell us what you like and what you would change.
+2. The tests (`yarn test` or `npm test`) don't pass cleanly. Find out why, and fix it.
+3. Add some new tests.
+4. If you find a bug in the app, write a bug report for it.
 
 Please do not change the application code.
